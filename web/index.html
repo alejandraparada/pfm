@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIOMASA</title>
+    <title>GeoGreen</title>
+
+    <script>
+      var dojoConfig = {
+        async : true
+      };
+    </script>
+
     <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:wght@400;700&display=swap');</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="http://js.arcgis.com/3.43/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.43/esri/css/esri.css">
+    <script src="http://js.arcgis.com/3.43/"></script>
+    <script src="map.js"></script>
+
+
 </head>
 <body>
     <header>
-      <h1 class="logo">Biomasa</h1>
+      <h1 class="logo">GeoGreen</h1>
       <input type="checkbox" class="nav-toggle" id="nav-toggle">
       <nav>
         <ul>
-          <li> <a href="">Opcion 1</a></li>
-          <li> <a href="">Opcion 2</a></li>
-          <li> <a href="">Opcion 3</a></li>
-          <li> <a href="">Opcion 4</a></li>
+          <li> <a class="menu-btn" href="index.html">Inicio</a></li>
+          <li> <a class="menu-btn"href="index.html#Preguntas">Preguntas</a></li>
+          <li> <a class="menu-btn"href="index.html#Aplicaciones">Aplicaciones</a></li>
+          <li> <a class="menu-btn"href="index.html#Contacto">Contacto</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
@@ -25,45 +41,87 @@
     </header>
     
     <!-- Section One -->
-    
-    <section class="section-one">
-      <h2 class="header">BIOMASA</h2>
-      <p class="section-one-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, ipsum. Nobis, libero neque ipsam eaque architecto distinctio illo accusantium corrupti labore aspernatur quas laborum ea, accusamus molestias, at consectetur eum!</p>
-      <a href="" class="learn-more-btn">Mas... </a> 
-    </section>
-    
-    <!-- Section Two -->
-    <section class="section=two">
-      <img src='https://images.unsplash.com/photo-1667826385031-2b4d06d686d8?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2MDMyODU&ixlib=rb-4.0.3&q=80'>
-    </section>
+    <div class="section-principal">
+      <section class="section-one">
+        <div class="background">
+          <div class="clip-text clip-text_one">GeoGreen </div>
+        </div>
+        
+      </section>
+    </div>
     
     <!-- Section Three -->
     <section class="section-three">
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque distinctio nulla ipsum eos tempora neque, sit similique.</h3>
-    </section>
-    
-    <!-- Section Four -->
-    <section class="section-four">
       <div class="flex-group">
-        <div>
-          <img src='https://images.unsplash.com/photo-1667490111717-21a3d34c58d0?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzUwODU&ixlib=rb-4.0.3&q=80'>
-        </div>
-        <div class="content-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt consequuntur ipsa pariatur dolor error repellendus, eius inventore dolorum fuga necessitatibus nisi illum quam a itaque, ipsam perspiciatis. Temporibus, cupiditate.</p>
-          <a href="" class="learn-more-btn section-four-btn">Mas...</a>
-        </div>
+        <h3 class="main-text">Planificar ciudades autogestonionable en consumo <span class="option">Eléctrico - Calefacción - CombustibleBio</span> haciendo uso de energía <span class="biomass">Biomasa</span> que permita optimizar la estructura actual de la cuidad y desarrollar proyectos a futuro de  crecimiento sostenible </h3>
       </div>
     </section>
-    
-    <!-- Section Five -->
-    <section class="section-five">
-      <div class="flex-group section-five-flex-group">
+
+    <!-- Section six -->
+    <section class="section-six">
+      <div class="flex-group">
         <div>
-          <img src='https://images.unsplash.com/photo-1667845210425-5f805be2f355?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzUwODU&ixlib=rb-4.0.3&q=80'>
+          <iframe class= "content-frame" src="https://storymaps.arcgis.com/stories/a5e6f819a42e4171a12298c6d9a9c3b0" width="60%" height="200px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
         </div>
         <div class="content-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veritatis consequatur dignissimos, eum nemo neque odio suscipit nam repudiandae quidem, dicta ipsum aut quaerat dolorum. Rerum excepturi natus dicta pariatur.</p>
-          <a href="" class="learn-more-btn section-four-btn">Mas...</a>
+          <p class="p-storymaps">El uso de biomasa como fuente de energía renovable puede ofrecer múltiples beneficios a las instituciones públicas, incluyendo la reducción de costos, el cumplimiento de los objetivos de reducción de emisiones de gases de efecto invernadero, la diversificación de fuentes de energía y el fomento de la innovación y el desarrollo tecnológico en la región. <span class="span-storymaps">¡Únete a nosotros en este emocionante proyecto hacia un futuro más sostenible!</span> </p>
+          <a href="https://arcg.is/LXmSr0" class="learn-more-btn section-four-btn">Ir a StoryMaps  <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>  
+
+    <div id="Preguntas" class="background-divide">
+      <div class="clip-text clip-text_one-divide">Preguntas </div>
+    </div>
+
+    <!-- Section six -->
+    <section class="section-six back-section" >
+      <div class="flex-group">
+        <div class="content-container">
+          <br><br>
+          <h2 class="option-p">¿Quién es el potencial cliente?</h2>
+          <ul>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Ministerios y otros organismos públicos (INE, IDAE...)</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Administraciones Territoriales "Comunidades Autónomas"</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Instituciones internacionales y políticas.</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Empresas e instituciones empresariales.</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Usuarios privados (consumidores, investigadores y estudiantes)</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Otros: prensa y medios de comunicación.</li>
+          </ul>
+        </div>
+        <div class="content-container">
+          <br>
+          <h2 class="option-p">¿Qué soluciones aportamos?</h2>
+          <ul>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Mapas web interactivos</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Análisis de datos , indicadores, tendencias y proyecciones</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Información a través de aplicaciones web/APP.</li>
+            <li class="li-preguntas"><i class="fa fa-chevron-right"></i> Levantamiento de información en campo</li><br><br><br><br>
+          </ul>
+        </div>
+      </div>
+    </section>  
+
+    <div  class="background">
+      <div id="Aplicaciones" class="clip-text clip-text_one-app">Aplicaciones </div>
+    </div>
+    <!-- Section Five -->
+    <section class="section-five">
+      
+      <div class="flex-group section-five-flex-group">
+        <div id="bcMain" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline', liveSplitters:'true'" >
+          <div id="cpCenter" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+            <div id="divMap">
+            </div>
+            <div id="divRenderer">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content-container">
+          <h2 class="option-p"> Geoportal de Mapas Interactivos</h2>
+          <p class="li-preguntas">Geoportal Interactivo con información de Edificios públicos y su calificacion de eficienncia energética en el Municipio de Valladolid</p>
+            <a href="" class="learn-more-btn section-four-btn" style="margin-left:50px ;">Ir al Geoportal  <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -75,8 +133,37 @@
           <img src='https://images.unsplash.com/photo-1667212805718-771e5ebdd8a5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzYyMjg&ixlib=rb-4.0.3&q=80'>
         </div>
         <div class="content-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis optio similique. Qui blanditiis molestias est consequuntur minima tenetur distinctio, ex explicabo animi neque. Aspernatur eos vitae nulla repudiandae maxime.</p>
-          <a href="" class="learn-more-btn section-four-btn">Opcion 1</a>
+          <h2 class="option-p"> WebApps</h2>
+          <p class="li-preguntas">Geoportal Interactivo con información de Edificios públicos y su calificacion de eficienncia energética en el Municipio de Valladolid</p>
+            <a href="" class="learn-more-btn section-four-btn" style="margin-left:50px ;">Abrir App  <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>  
+
+    <!-- Section Five -->
+    <section class="section-five">
+      <div class="flex-group section-five-flex-group">
+        <div>
+          <img src='https://images.unsplash.com/photo-1667212805718-771e5ebdd8a5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzYyMjg&ixlib=rb-4.0.3&q=80'>
+        </div>
+        <div class="content-container">
+          <h2 class="option-p"> Dashboard de Control</h2>
+          <p class="li-preguntas">Geoportal Interactivo con información de Edificios públicos y su calificacion de eficienncia energética en el Municipio de Valladolid</p>
+            <a href="" class="learn-more-btn section-four-btn" style="margin-left:50px ;">Ver Dashboard  <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section six -->
+    <section class="section-six">
+      <div class="flex-group">
+        <div>
+          <img src='https://images.unsplash.com/photo-1667212805718-771e5ebdd8a5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2NzYyMjg&ixlib=rb-4.0.3&q=80'>
+        </div>
+        <div class="content-container">
+          <h2 class="option-p"> Survey123</h2>
+          <p class="li-preguntas">Geoportal Interactivo con información de Edificios públicos y su calificacion de eficienncia energética en el Municipio de Valladolid</p>
+            <a href="" class="learn-more-btn section-four-btn" style="margin-left:50px ;">Ir a Survey123  <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </section>  
@@ -105,6 +192,14 @@
       </div>
     </section>
     
+    <!-- Section Two -->
+    <section class="section-two">
+      <img src='https://images.unsplash.com/photo-1667826385031-2b4d06d686d8?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2MDMyODU&ixlib=rb-4.0.3&q=80'>
+    </section>
+
+    
+    
+
     <!-- Section Nine -->
     
     <section class="section-nine">
@@ -121,9 +216,23 @@
       </div>
     </section>
     
-    <section class="section-ten">
+    <section id="Contacto" class="section-ten">
       <h3>Contactanos</h3>
-      <a href="" class="learn-more-btn section-ten-btn">Click</a>
+    </section>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+  
+        <button type="submit">Enviar</button>
+      </form>
     </section>
     
   </body>
