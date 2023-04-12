@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeGreen</title>
+<!-- 
+    <script>
+      var dojoConfig = {
+        async : true
+      };
+    </script> -->
+
+    <link rel="stylesheet" href="reciclaje.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=EB+Garamond:wght@400;700&display=swap');</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="http://js.arcgis.com/3.43/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.43/esri/css/esri.css">
+    <script src="http://js.arcgis.com/3.43/"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <script src="reciclaje.js"></script>
+
+
+</head>
+<body>
+    <header>
+      <h1 class="logo">BeGreen</h1>
+      <input type="checkbox" class="nav-toggle" id="nav-toggle">
+      <nav>
+        <ul>
+          <li> <a class="menu-btn" href="reciclaje.html">Inicio</a></li>
+          <li> <a class="menu-btn" href="html#quienesSomos">Quienes somos</a></li>
+          <li> <a class="menu-btn"href="index.html#Calculadora">Participa</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+    
+    <!-- Section One -->
+    <div class="section-principal">
+      <section class="section-one">
+        <div class="background">
+          <div class="clip-text clip-text_one">Reciclaje #cambiarLuego# </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Section Two -->
+    <section id="quienesSomos" class="section-three">
+      <div class="flex-group">
+        <h3 class="main-text"><span class="biomass">GeoGreen</span> para planificar ciudades autogestonionable en consumo <span class="option">Eléctrico - Calefacción - CombustibleBio</span> haciendo uso de energía <span class="biomass">Biomasa</span> que permita optimizar la estructura actual de la cuidad y desarrollar proyectos a futuro de  crecimiento sostenible </h3>
+      </div>
+    </section>
+
+    <!-- Section Three -->
+    <section class="section-six">
+      <div class="flex-group">
+        <div>
+          <iframe class= "content-frame" src="https://storymaps.arcgis.com/stories/a5e6f819a42e4171a12298c6d9a9c3b0" width="60%" height="200px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+        </div>
+        <div class="content-container">
+          <p class="p-storymaps">El uso de biomasa como fuente de energía renovable puede ofrecer múltiples beneficios a las instituciones públicas, incluyendo la reducción de costos, el cumplimiento de los objetivos de reducción de emisiones de gases de efecto invernadero, la diversificación de fuentes de energía y el fomento de la innovación y el desarrollo tecnológico en la región. <span class="span-storymaps">¡Únete a nosotros en este emocionante proyecto hacia un futuro más sostenible!</span> </p>
+          <a href="https://arcg.is/LXmSr0" class="learn-more-btn section-four-btn">Ir a StoryMaps  <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>  
+    
+    <!-- Calculadora reciclaje -->
+    <div id="cont-ticket" class="container justify-content-around ">
+      <h2>Generador de Etiquetas</h2>
+      <label for="">Ingrese los campos obligatorios, modifique o deje el valor por defecto si lo desconoce</label><br>
+      <div class="row justify-content-around">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="inputReferencia" class="form-label">Ref. catastral* [ <span style="font-size: smaller;">Letras en mayúscula</span> ]</label>
+            <input type="text" class="form-control" id="inputReferencia" aria-describedby="validationServer03Feedback" >
+          </div>
+          <div class="col-md-8">
+            <label for="inputDireccion" class="form-label">Dirección [ <span style="font-size: smaller;">Calle, Nro, Cod postal Municipio</span> ]</label>
+            <input type="text" class="form-control" id="inputDireccion" aria-describedby="validationServer03Feedback" placeholder="Ej: Calle Esgueva, 15, 47003 Valladolid">
+          </div>
+          <div class="col-md-2">
+            <label for="inputContenedor" class="form-label">Cod. contenedor</label>
+            <input type="number" class="form-control" value="5" id="inputContenedor">
+          </div>
+          <div class="col-md-2">
+            <label for="inputKilos" class="form-label">Kg. depositados*</label>
+            <div class="input-group">
+              <input type="number" class="form-control" value="10" id="inputKilos"><span class="input-group-text" id="inputKilos">Kg</span>
+            </div>
+          </div>
+          <div class="col-md-8"></div>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-success" onclick="generarTicket()">Ver Ticket</button>
+            <button type="button" class="btn btn-success" onclick="descargarPdf()">Descargar Ticket</button>
+          </div>
+          <hr>
+          <div id= "divTicket" class="row col-md-12">
+            <h4 for="">Ticket generado</h4><br><br>
+            <div class="row">
+              <label class="col-md-2" >Ref. Catastral:</label>
+              <label id="txtReferencia" class="col-md-6">
+              </label>
+              <label id="fecha" class="col-md-2">Fecha: </label>
+              <label id="hora" class="col-md-2">Hora: </label>
+            </div>
+            <div class="row">
+              <label class="col-md-2" >Direccion:</label>
+              <label id="txtDireccion" class="col-md-4">
+              </label>
+            </div>
+            <div class="row">
+              <label class="col-md-2" >Cod. Contenedor:</label>
+              <label id="txtContenedor" class="col-md-3">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label for="inputReciclar" class="form-label"> Kg reciclados</label>
+              <div class="input-group">
+                <div id="inputReciclar" class="form-control" type="text"  aria-label="Disabled input example" aria-placeholder="" disabled readonly></div><span class="input-group-text" id="inputReciclar">Kg</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="inputEmision" class="form-label"> Kg CO2 evitados</label>
+              <div class="input-group">
+                <div id="inputEmision" class="form-control" type="text"  aria-label="Disabled input example" aria-placeholder="" disabled readonly></div><span class="input-group-text" id="inputEmision">Kg CO2</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="inputPuntos" class="form-label"> GeoPuntos</label>
+              <div class="input-group">
+                <div id="inputPuntos" class="form-control" type="text"  aria-label="Disabled input example" aria-placeholder="" disabled readonly></div><span class="input-group-text" id="inputPuntos">Pts</span>
+              </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="flex-group" style="text-align: center;">
+              <h3 class="main-text">Obtuviste <span id="puntos" class="biomass"> </span><span id="puntos" class="biomass"> GeoPuntos</span><p>Acumula <span class="biomass">puntos </span> y gana <span class="option">premios!</span></p> </h3>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  <!-- Section Seven -->  
+  
+    <section class="section-seven">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, similique. Deserunt, saepe qui libero alias exercitationem assumenda. Expedita repudiandae provident consequatur accusamus aut. Quod architecto enim, quis autem suscipit blanditiis!</h3>
+    </section>
+    
+  <!-- Section Eight -->
+    <section class="section-eight">
+      <div class="flex-group-eight">
+        <div>
+          <img src='https://images.unsplash.com/photo-1667684550725-71e60ab8368e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2Nzc2NDk&ixlib=rb-4.0.3&q=80'>
+          <h4>Cuadro 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis expedita similique itaque iusto beatae? Eaque officiis reprehenderit recusandae soluta provident nemo repellat possimus eum, assumenda repudiandae dignissimos quis deserunt!</p>
+        </div>
+        
+        <div>
+          <img src='https://images.unsplash.com/photo-1666845267403-191d298cf198?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njk2OTEzOTc&ixlib=rb-4.0.3&q=80'>
+          <h4>Cuadro 2</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita maiores nemo quam odio corrupti aut error, debitis, dolorem ab blanditiis voluptate praesentium voluptatum dolorum? Autem veritatis explicabo ipsam. Quo, qui!</p>
+        </div>
+      </div>
+    </section>
+    
+    
+  </body>
+</html>
