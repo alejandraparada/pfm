@@ -85,7 +85,7 @@
                                             <a href="#id_Participa"style="text-decoration:none; color: white;" class="main-menu__link">Participa</a>
                                         </li>
                                         <li class="main-menu__item " data-id="4917">
-                                            <a href="#id_Premios"style="text-decoration:none; color: white;" class="main-menu__link">GeoPuntos - GeoPremios</a>
+                                            <a href="#id_Premios"style="text-decoration:none; color: white;" class="main-menu__link">GeoPuntos - GeoBeneficios</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -211,7 +211,7 @@
                             <div class="color-row__wrapper-title">
                                 <h3 class="color-row__title">
                                     <a class="color-row__link-accordion" style="text-decoration:none; color: white;" href="#" data-id="1">
-                                        <span class="color-row__text-title">Participa</span>
+                                        <span class="color-row__text-title">Preguntas Frecuentes</span>
                                         <img class="color-row__icon-down active" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-down.svg">
                                         <img class="color-row__icon-up" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-up.svg">
                                     </a>
@@ -222,15 +222,18 @@
                             <div class="color-row__inner-content global-inner">
                                 <div class="color-row__column-one" style="text-align: justify;">
                                     <p>
-                                        <strong>Proyecto GeoGreen - Recicla</strong>
+                                        <strong>Qué es el proyecto GeoGreen - Recicla?</strong>
                                         El proyecto tiene como objetivo fomentar prácticas sostenibles en la gestión de residuos y promover una economía circular, hemos instalado contenedores especiales para la recolección selectiva de papeles y cartones en zonas estratégicas de la ciudad.
                                     </p>
                                     <p>&nbsp;</p>
                                     <p>
                                         <strong>Cómo puedo participar?</strong>
-                                        Cada vez que recicles papeles y cartones en estos contenedores, acumulas puntos que puedes canjear por premios. Cuanto más recicles, más puntos ganas, lo que te brinda la oportunidad de obtener recompensas únicas y especiales.
+                                        Cada vez que recicles papeles y cartones en estos contenedores inteligentes "Flac", acumulas puntos para obtener beneficios. Cuanto más recicles, más puntos ganas, lo que te brinda la oportunidad de recibir recompensas únicas y especiales. Los primeros 10 GeoFans del reciclaje, conseguirán un 30% de rebajas en impuestos!
                                     </p>
                                     <p>&nbsp;</p>
+                                    <p>
+                                        <strong>Qué pasos debo seguir?</strong>
+                                    </p>
                                     <p>
                                         <strong>Paso 1</strong>
                                         Recolecta todo los papeles y cartones que tengas en tu hogar o lugar de trabajo.
@@ -251,12 +254,46 @@
                                     <p>&nbsp;</p>
                                     <p>
                                         <strong>Paso 4</strong>
-                                        Descarga el ticket en formato pdf con los GeoPuntos calculados.
+                                        Descarga el ticket en formato pdf con los GeoPuntos calculados. Este ticket es la prueba de que has reciclado y te permitirá participar en la encuesta para sumar puntos y obtener beneficios.
                                     </p>
                                     <p>&nbsp;</p>
                                     <p>
                                         <strong>Paso 5</strong>
-                                        Para validar los puntos, ingresa todos los datos en la encuesta y suma más puntos para obtener premios.
+                                        Para validar los puntos, ingresa todos los datos en la encuesta y suma más puntos para obtener beneficios.
+                                    </p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="color-row__wrapper" style="background: #fbf980;">
+                        <div class="color-row__inner global-inner">
+                            <div class="color-row__wrapper-title">
+                                <h3 class="color-row__title">
+                                    <a class="color-row__link-accordion" style="text-decoration:none; color: white;" href="#" data-id="3">
+                                        <span class="color-row__text-title">Participa</span>
+                                        <img class="color-row__icon-down active" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-down.svg">
+                                        <img class="color-row__icon-up" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-up.svg">
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div id="colorRowContent--3" class="color-row__wrapper-content">
+                            <div class="color-row__inner-content global-inner">
+                                <div class="color-row__column-one" style="text-align: justify;">
+                                    <p>
+                                        <h2><strong>Calculadora de Puntos </strong></h2>
+                                    </p>
+                                    <p>
+                                        Calcular los puntos obtenidos en el proyecto GeoRecicla es fundamental para el correcto funcionamiento de la iniciativa. Cada kilogramo de papel o cartón reciclado se traduce en una determinada cantidad de puntos. 
+                                    </p>
+                                </div>
+                                <div class="color-row__column-two" style="text-align: justify;">
+                                    <br><br>
+                                    <p>
+                                        Además, los puntos permiten llevar un registro del impacto ambiental generado por la comunidad, lo que ayuda a mejorar la planificación y gestión de residuos en la zona. 
                                     </p>
                                     <p>&nbsp;</p>
                                 </div>
@@ -286,8 +323,8 @@
                                     </div><br>
                                     <div class="col-md-8"></div>
                                     <div class="col-md-4">
-                                      <button type="button" class="btn btn-dark" onclick="generarTicket()">Ver Puntos</button>
-                                      <button type="button" class="btn btn-dark" onclick="descargarPdf()">Descargar</button>
+                                      <button type="button" class="btn btn-success" onclick="generarTicket()">Ver Puntos</button>
+                                      <button type="button" class="btn btn-success" onclick="descargarPdf()">Descargar</button>
                                     </div>
                                     <hr>
                                     <div id= "divTicket" class="row col-md-12">
@@ -329,13 +366,40 @@
                                       </div>
                                       <br><br><br><br><br>
                                       <div class="flex-group" style="text-align: center;">
-                                        <h3 class="main-text">Obtuviste <span id="puntos" class="biomass"> </span><span id="puntos" class="biomass"> GeoPuntos</span><p>Acumula <span class="biomass">puntos </span> y gana <span class="option">premios!</span></p> </h3>
+                                        <h3 class="main-text">Obtuviste <span id="puntos" class="biomass"> </span><span id="puntos" class="biomass"> GeoPuntos</span><p>Acumula <span class="biomass">puntos </span> y obten <span class="option">beneficios!</span></p> </h3>
                                       </div><br>
                                     </div>
                                   </form>
                                 </div>
                             </div>
-                            
+                            <br><br>
+                            <div class="color-row__inner-content global-inner">
+                                <div class="color-row__column-one" style="text-align: left; width: 140%; ">
+                                    <p>
+                                        <h2><strong>GeoSurvey - GeoRecicla </strong></h2>
+                                    </p>
+                                    <img href="https://arcg.is/4mvm8" src="Images/survey.png"  class="home-cover__image" style="height: auto; width: 50%;justify-items:left; margin-bottom: 0px;"/>
+                                </div>
+                                <div class="color-row__column-one" style="text-align: justify;" >
+                                    <p>&nbsp;</p>
+                                    <p>
+                                        <strong>Por qué es importante?</strong>
+                                    </p>
+                                    <p>
+                                        Llenar nuestro geoSurvey es fundamental para validar los puntos ganados en el proyecto GeoGreen - Recicla y así poder canjearlos por premios.
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <p>
+                                        Además, a través de la encuesta, podemos conocer más sobre las prácticas de reciclaje de la comunidad y mejorar nuestra iniciativa en función de las necesidades y sugerencias de nuestros participantes. 
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <p>
+                                        Por lo tanto, al llenar la geoSurvey, no solo estás sumando puntos, sino que también estás contribuyendo a un proyecto más eficiente y sostenible para el cuidado del medio ambiente.
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <a href="https://arcg.is/4mvm8" class="btn btn-success">Ir a la encuesta  <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="id_Premios" class="color-row__wrapper" style="background: #00235bcc; border-radius: 0px 0px 0px 0px;">
@@ -343,7 +407,7 @@
                             <div class="color-row__wrapper-title">
                                 <h3 class="color-row__title">
                                     <a class="color-row__link-accordion" style="text-decoration:none; color: white;" href="#" data-id="2">
-                                        <span class="color-row__text-title">GeoPuntos - GeoPremios </span>
+                                        <span class="color-row__text-title">GeoPuntos - GeoBeneficios </span>
                                         <img class="color-row__icon-down active" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-down.svg">
                                         <img class="color-row__icon-up" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-up.svg">
                                     </a>
@@ -356,50 +420,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="color-row__wrapper" style="background: #bde4ff;">
-                        <div class="color-row__inner global-inner">
-                            <div class="color-row__wrapper-title">
-                                <h3 class="color-row__title">
-                                    <a class="color-row__link-accordion" href="#" data-id="3">
-                                        <span class="color-row__text-title">Nuestros GANADORES </span>
-                                        <img class="color-row__icon-down active" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-down.svg">
-                                        <img class="color-row__icon-up" src="https://premiosverdes.org/wp-content/themes/plv/images/arrow-circle-up.svg">
-                                    </a>
-                                </h3>
-                            </div>
-                        </div>
-                        <div id="colorRowContent--3" class="color-row__wrapper-content">
-                            <div class="color-row__inner-content global-inner">
-                                <div class="color-row__column-one">
-                                    <p>
-                                        <strong>Protagonista de la Gala de Premiación: </strong>
-                                        subirás al escenario y además tendrás material audiovisual exclusivo en la Gala de Premiación, donde compartirás escenario junto a personalidades y celebridades del mundo socio-ambiental.
-                                    </p>
-                                    <p>&nbsp;</p>
-                                    <p>
-                                        <strong>Estatuilla de Ganador:</strong>
-                                        recibirás una estatuilla única, hecha a mano y de forma sostenible, la cual podrás utilizar para promover el reconocimiento de tu proyecto, más un certificado con el resultado del ranking del proyecto y sello de ganador.
-                                    </p>
-                                </div>
-                                <div class="color-row__column-two">
-                                    <p>
-                                        <strong>Premio Especial:</strong>
-                                        entre los proyectos ganadores de todas las categorías se entregará un único reconocimiento a la escalabilidad, que incluye un «grant» de U$S 20.000 para aumentar su impacto.
-                                    </p>
-                                    <p>&nbsp;</p>
-                                    <p>
-                                        <strong>Elegible al Premio ODS:</strong>
-                                        tendrás la posibilidad de ser reconocido por las Naciones Unidas y su premio a los objetivos de desarrollo sostenible.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-                <div class="newsletter" style="background-color:#fbf980 ; ">
+                
+                <div class="newsletter" style="background-color:black ; ">
                     <div class="newsletter__inner global-inner"  >
                         <div class="newsletter__wrapper-title">
-                            <h4 class="newsletter__title" style="color: black;">Mantente informado de nuestros premios</h4>
+                            <h4 class="newsletter__title" style="color: white;">Mantente informado de nuestros beneficios</h4>
                         </div>
                         <div class="newsletter__wrapper-form">
                             <form id="sib_signup_form_1" method="post" class="sib_signup_form">
@@ -450,6 +476,11 @@
                                 }
                             </style>
                         </div>
+                    </div>
+                </div>
+                <div id="colorRowContent--1" class="" style="background: white; ">
+                    <div>
+                        <img src="Images/partner.jpg" class="home-cover__image" style="height: auto; width: 100%;justify-items:center"/>
                     </div>
                 </div>
             </div>
@@ -515,7 +546,7 @@
                                 <li id="menu-item-2637" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1887 current_page_item menu-item-has-children menu-item-2637">
                                     <ul class="sub-menu">
                                         <li id="menu-item-3902" class="footer-bold menu-item menu-item-type-custom menu-item-object-custom menu-item-3902">
-                                            <a href="" style="text-decoration:none; color: white;">LOS PREMIOS</a>
+                                            <a href="" style="text-decoration:none; color: white;">LOS BENEFICIOS</a>
                                         </li>
                                     </ul>
                                 </li>
