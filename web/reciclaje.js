@@ -14,8 +14,8 @@ function generarTicket(){
     document.getElementById("hora").innerHTML="Hora: " + fecha.toLocaleTimeString();
 
     //Obtenemos los valores de las variables
-    refCatastral = document.getElementById("inputReferencia").value
-    console.log(refCatastral)
+    refCatastral= document.getElementById("inputReferencia").value.toUpperCase()
+    console.log('ref. catastral',refCatastral)
 
     codContenedor = document.getElementById("inputContenedor").value
     console.log(codContenedor)
@@ -61,5 +61,43 @@ function descargarPdf(){
     printWindow.document.write('</body></html>');
     printWindow.document.close();
     printWindow.print();
+}
+
+function restablecer(){
+    // Obtenemos la fecha actual
+    document.getElementById("fecha").innerHTML="Fecha: " 
+
+    document.getElementById("hora").innerHTML="Hora: " 
+
+    //Obtenemos los valores de las variables
+    document.getElementById("inputReferencia").value = '';
+
+    document.getElementById("inputContenedor").value = '';
+    console.log(codContenedor)
+
+    document.getElementById("inputDireccion").value = '';
+
+
+    //Mostramos la variable en el ticket
+    document.getElementById("txtReferencia").innerHTML= ''
+    document.getElementById("txtContenedor").innerHTML= ''
+    document.getElementById("txtDireccion").innerHTML= ''
+    
+
+    //Calculo de emisiones de CO2
+    //(Por cada Kg de papel reciclado, se evita 1,2kg CO2)
+    document.getElementById("inputKilos").value ='';
+
+
+    //Mostrar los kg reciclados
+    document.getElementById("inputReciclar").innerHTML= ''
+
+    //Mostrar las emisiones de CO2 evitados
+    document.getElementById("inputEmision").innerHTML= ''
+
+    //Calculo de puntos por kg reciclado
+    document.getElementById("inputPuntos").innerHTML= ''
+    document.getElementById("puntos").innerHTML= ''
+
 }
 

@@ -285,7 +285,7 @@
                                   <form class="row g-3">
                                     <div class="col-md-4">
                                       <label for="inputReferencia" class="form-label">Ref. catastral [ <span style="font-size: smaller;">Letras en mayúscula</span> ]</label>
-                                      <input type="text" class="form-control" id="inputReferencia" aria-describedby="validationServer03Feedback" >
+                                      <input type="text" class="form-control text-uppercase" id="inputReferencia" aria-describedby="validationServer03Feedback" >
                                     </div><br>
                                     <div class="col-md-8">
                                       <label for="inputDireccion" class="form-label">Dirección [ <span style="font-size: smaller;">Calle, Nro, Cod postal Municipio</span> ]</label>
@@ -302,9 +302,10 @@
                                       </div>
                                     </div><br>
                                     <div class="col-md-8"></div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                       <button type="button" class="btn btn-success" onclick="generarTicket()">Ver Puntos</button>
                                       <button type="button" class="btn btn-success" onclick="descargarPdf()">Descargar</button>
+                                      <button type="button" class="btn btn-success" onclick="restablecer()">Restablecer</button>
                                     </div>
                                     <hr>
                                     <div id= "divTicket" class="row col-md-12">
