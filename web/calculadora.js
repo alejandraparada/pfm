@@ -130,3 +130,45 @@ function calcularResultado(){
 
 }
 
+function restablecerResultado(){
+    
+    //Obtenemos valor de superficie
+    document.getElementById("inputSuperficie").value = '0';
+
+    //Obtenemos valor de nro de personas
+    document.getElementById("inputPersonas").value = '0';
+
+    //Obtenemos valor de nro de horas
+    document.getElementById("inputHorasDia").value = '0';
+
+    //Obtenemos valor de nro de días
+    document.getElementById("inputDias").value = '0';
+
+    //CONSTANTES
+    //Obtenemos valor de rendimiento de caldera Biomasa
+    var rBiomasa= document.getElementById("inputRendimientoB").value;
+    rendimientoBiomasa= rBiomasa/100;
+    console.log(rendimientoBiomasa)
+
+    //Obtenemos valor de rendimiento de caldera Gasoleo
+    var rGasoleo= document.getElementById("inputRendimientoG").value;
+    rendimientoGasoleo= rGasoleo/100;
+    
+    //CÁLCULOS
+    document.getElementById("inputPotencia").innerHTML = '0'
+    document.getElementById("inputConsumoB").innerHTML = '0';
+    document.getElementById("inputConsumoG").innerHTML = '0';
+
+    //Calculo Emision Co2
+    emision = consumoG * 0.287
+    document.getElementById("inputEmision").innerHTML = '0';
+
+    //Mostramos los valores
+    document.getElementById("inputKgB").innerHTML = '0'
+    document.getElementById("inputKgG").innerHTML = '0'
+    document.getElementById("inputEurosB").innerHTML = '0'
+    document.getElementById("inputEurosG").innerHTML = '0'
+    
+
+
+}
